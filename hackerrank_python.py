@@ -1,8 +1,7 @@
-#Function to check leap year
+#1. Write a Function to check leap year
 def is_leap(year):
     leap = False
 
-    # Write your logic here
     if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
         leap = True
     else:
@@ -10,13 +9,14 @@ def is_leap(year):
 
     return leap
 
-#Program to print integers in one line without using string methods
+#2. Program to print integers in one line without using string methods
 from __future__ import print_function
 
 N = int(input())
 print(*range(1,N+1), sep='')
 
-#or
+#alternative method
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 print reduce(lambda x, y: x+y, map(lambda x: str(x+1), range(int(input()))))
 
@@ -31,7 +31,7 @@ for i in range(1,Input+1):
 print Answer
 
 
-#Happiness Change
+#3. Function for happiness change
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 n, m = [int(x) for x in input().split()]
